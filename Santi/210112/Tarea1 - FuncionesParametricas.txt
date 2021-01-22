@@ -1,0 +1,5 @@
+Tarea 1 - David Santiago Canales Franco
+
+1. max(0, sin(x*a)/b) + x
+2. sin(x)*sin(a*x)
+3. parametric plot (x , cos(x*15) * x, sin(x*15) * x )
