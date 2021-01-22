@@ -1,0 +1,6 @@
+Desmos:
+max(0,sen(x*a)/b)+5
+min(sin(m*x))*max(sin(m/x))*5
+
+Wolfram alpha
+parametric plot (x, sin(x^2), sin(x^2)) * 5
