@@ -1,0 +1,49 @@
+void mainImage( out vec4 fragColor, in vec2 fragCoord )
+{
+    // Normalized pixel coordinates (from 0 to 1)
+    vec2 uv = fragCoord/iResolution.xy;
+    
+    vec4 noise = texture(iChannel1,uv*15.0);
+    
+    
+    vec4 tex = texture(iChannel0,uv);
+    uv.x = (800.0/450.0)*uv.x - 0.35;
+
+    vec2 center = vec2(0.5, 0.5);
+    
+    vec2 v = uv-center;
+    
+    //float dist = pow( v.x*v.x + v.y*v.y  , 0.5 );
+    float dist = length(v);
+    
+    vec4 finalColor = vec4(0.0, 0.0, 0.0, 1.0);
+    
+    
+    vec2 v2 = v*2.0;
+    
+    float z = pow(  1.0-v2.x*v2.x-v2.y*v2.y, 0.5 );
+    
+    vec3 normal = vec3( v2.x, v2.y, z );
+    
+    vec3 v3 = normalize( vec3(0.0,0.0,1.0));
+    
+    float light = clamp((normal.x * v3.x)+(normal.y * v3.y) + (normal.z * v3.z),0.0,1.0);
+    float edge = pow(1.0-clamp((normal.x * v3.x)+(normal.y * v3.y) + (normal.z * v3.z) +( (noise.b - 0.5)*2.0),0.0,1.0),4.0)  ;
+    
+    
+    //normal = (normal + vec3(1.0, 1.0, 1.0))/2.0;
+    
+    
+    float alpha = acos(normal.y)/3.1415;
+    float betha =  1.0-atan(normal.z,normal.x)/(2.0*3.1415);
+    
+    vec4 t = texture(iChannel0,vec2(betha,1.0 - alpha))  +( (noise - 0.5)*2.0);
+    
+    if( dist<=0.5 )
+        finalColor = t * light + edge *vec4(0.3,1.0,0.3,0.0);
+    else
+        finalColor = tex;
+
+    // Output to screen
+    fragColor = finalColor;
+}
