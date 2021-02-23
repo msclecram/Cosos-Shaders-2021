@@ -1,0 +1,18 @@
+void mainImage( out vec4 fragColor, in vec2 fragCoord )
+{
+    // Normalized pixel coordinates (from 0 to 1)
+    vec2 uv = fragCoord/iResolution.xy;
+    
+    vec2 centro = vec2(0.5,0.5);
+    
+    float a = abs(uv.x + centro.x) *5.0;
+    float a2 = abs(uv.y-centro.y)*5.0;
+    float c = mix(a,a2,0.5);
+    
+    vec4 r = texture(iChannel0,uv + vec2(0.01,0.01) * c);
+    vec4 g = texture(iChannel0,uv + vec2(0.01,-0.01) * c);
+    vec4 b = texture(iChannel0,uv + vec2(-0.01,-0.01) * c);
+
+    // Output to screen
+    fragColor = vec4(vec3(r.r,g.g,b.b),1.0);
+}
