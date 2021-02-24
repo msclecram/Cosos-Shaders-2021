@@ -1,0 +1,45 @@
+void mainImage( out vec4 fragColor, in vec2 fragCoord )
+{
+    // Normalized pixel coordinates (from 0 to 1)
+    vec2 uv = fragCoord/iResolution.xy;
+    
+    uv.x = (800.0/450.0)*uv.x - 0.35;
+
+    vec2 center = vec2(0.5, 0.5);
+    
+    vec2 v = uv-center;
+    
+    
+    float dist = length(v);
+    
+    vec4 finalColor = vec4(0.0, 0.0, 0.0, 1.0);
+    
+    
+    vec2 v2 = v*2.0;
+    
+    float z = pow(  1.0-v2.x*v2.x-v2.y*v2.y, 0.5 );
+    
+    vec3 normal = vec3( v2.x, v2.y, z ); // arriba ( 0, 0, 1 )
+    
+    //iTime    
+    
+    float alpha = acos(normal.y)/3.1415;
+    float betha =  1.0-atan(normal.z,normal.x)/(2.0*3.1415);
+    
+    normal = normalize(normal + vec3(  sin(alpha), cos(betha), 0.0 )*0.4);
+    
+    float lighting = clamp(dot(normal, normalize(vec3(0.0, 0.0 , 1.0)) ), 0.0, 1.0);
+    
+    normal = (normal + vec3(1.0, 1.0, 1.0))/2.0;
+    
+    vec4 t = texture(iChannel0,vec2(betha ,1.0 - alpha));
+    if( dist<=0.5 )
+        finalColor = t*lighting;
+        //finalColor = vec4(normal, 1.0);
+            
+    
+    vec4 color = vec4(1.0, 1.0, 1.0, 1.0);
+
+    // Output to screen
+    fragColor = finalColor;
+}
