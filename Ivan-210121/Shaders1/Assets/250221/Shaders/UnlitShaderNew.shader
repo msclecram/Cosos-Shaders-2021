@@ -34,7 +34,7 @@
                 float2 uv : TEXCOORD0;
                 UNITY_FOG_COORDS(1)
                 float4 vertex : SV_POSITION;
-                float3 normal: NORMAL;
+                float3 normal: TEXCOORD1;
                 float3 worldPos: TEXCOORD2;
             };
 
@@ -58,6 +58,7 @@
 
             fixed4 frag(v2f i) : SV_Target
             {
+                float3 lightPosition = float3(10.0,10.0,10.0);
                 float3 camDir = normalize(_WorldSpaceCameraPos - i.worldPos);
                 float punto = 1.0 - dot(camDir, i.normal);
 
