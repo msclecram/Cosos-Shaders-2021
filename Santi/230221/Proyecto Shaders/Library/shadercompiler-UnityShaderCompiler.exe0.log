@@ -1,0 +1,76 @@
+Base path: 'C:/Program Files/Unity/Hub/Editor/2019.4.18f1/Editor/Data', plugins path 'C:/Program Files/Unity/Hub/Editor/2019.4.18f1/Editor/Data/PlaybackEngines'
+Cmd: initializeCompiler
+Cmd: preprocess
+  insize=1413 outsize=293 ok=1
+Cmd: preprocess
+  error: 1 plat 21 at (21): Unrecognized #pragma directive: multi_com3.1415le_fog
+  insize=1858 outsize=394 ok=1
+Cmd: preprocess
+  error: 1 plat 21 at (21): Unrecognized #pragma directive: multi_com3.1415le_fog
+  insize=1823 outsize=394 ok=1
+Cmd: preprocess
+  error: 1 plat 21 at (21): Unrecognized #pragma directive: multi_com3.1415le_fog
+  insize=1820 outsize=391 ok=1
+Cmd: preprocess
+  error: 1 plat 21 at (21): Unrecognized #pragma directive: multi_com3.1415le_fog
+  insize=1733 outsize=391 ok=1
+Cmd: preprocess
+  error: 1 plat 21 at (21): Unrecognized #pragma directive: multi_com3.1415le_fog
+  insize=1734 outsize=391 ok=1
+Cmd: preprocess
+  error: 1 plat 21 at (21): Unrecognized #pragma directive: multi_com3.1415le_fog
+  insize=1861 outsize=391 ok=1
+Cmd: preprocess
+  insize=1409 outsize=289 ok=1
+Cmd: preprocess
+  insize=1409 outsize=289 ok=1
+Cmd: preprocess
+  error: 1 plat 21 at (21): Unrecognized #pragma directive: multi_com3.1415le_fog
+  insize=2045 outsize=425 ok=1
+Cmd: preprocess
+  error: 1 plat 21 at (21): Unrecognized #pragma directive: multi_com3.1415le_fog
+  insize=2045 outsize=425 ok=1
+Cmd: preprocess
+  error: 1 plat 21 at (21): Unrecognized #pragma directive: multi_com3.1415le_fog
+  insize=2034 outsize=390 ok=1
+Cmd: preprocess
+  error: 1 plat 21 at (21): Unrecognized #pragma directive: multi_com3.1415le_fog
+  insize=2036 outsize=391 ok=1
+Cmd: preprocess
+  error: 1 plat 21 at (21): Unrecognized #pragma directive: multi_com3.1415le_fog
+  insize=2032 outsize=389 ok=1
+Cmd: preprocess
+  error: 1 plat 21 at (21): Unrecognized #pragma directive: multi_com3.1415le_fog
+  insize=2302 outsize=391 ok=1
+Cmd: preprocess
+  error: 1 plat 21 at (21): Unrecognized #pragma directive: multi_com3.1415le_fog
+  insize=2301 outsize=391 ok=1
+Cmd: preprocess
+  error: 1 plat 21 at (21): Unrecognized #pragma directive: multi_com3.1415le_fog
+  insize=2306 outsize=391 ok=1
+Cmd: compileSnippet
+  error: 2 plat 4 at (62): 'pow': no matching 1 parameter intrinsic function; Possible intrinsic functions are: pow(float|half|min10float|min16float, float|half|min10float|min16float)\nCompiling Vertex program
+Platform defines: UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR
+  api=4 type=0 insize=2353 outsize=0 kw= pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR ok=0
+Cmd: compileSnippet
+  error: 2 plat 4 at (62): 'pow': no matching 1 parameter intrinsic function; Possible intrinsic functions are: pow(float|half|min10float|min16float, float|half|min10float|min16float)\nCompiling Fragment program
+Platform defines: UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR
+  api=4 type=1 insize=2353 outsize=0 kw= pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR ok=0
+Cmd: preprocess
+  error: 1 plat 21 at (21): Unrecognized #pragma directive: multi_com3.1415le_fog
+  insize=2311 outsize=391 ok=1
+Cmd: preprocess
+  error: 1 plat 21 at (21): Unrecognized #pragma directive: multi_com3.1415le_fog
+  insize=2313 outsize=391 ok=1
+Cmd: preprocess
+  error: 1 plat 21 at (21): Unrecognized #pragma directive: multi_com3.1415le_fog
+  insize=2315 outsize=391 ok=1
+Cmd: preprocess
+  error: 1 plat 21 at (21): Unrecognized #pragma directive: multi_com3.1415le_fog
+  insize=2313 outsize=391 ok=1
+Cmd: preprocess
+  error: 1 plat 21 at (21): Unrecognized #pragma directive: multi_com3.1415le_fog
+  insize=2315 outsize=391 ok=1
+Cmd: preprocess
+  error: 1 plat 21 at (21): Unrecognized #pragma directive: multi_com3.1415le_fog
+  insize=2319 outsize=391 ok=1

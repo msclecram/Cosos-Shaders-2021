@@ -1,0 +1,5 @@
+sceneSetups:
+- path: Assets/25-02-21/Scenes/RobotKyle2502.unity
+  isLoaded: 1
+  isActive: 1
+  isSubScene: 0
