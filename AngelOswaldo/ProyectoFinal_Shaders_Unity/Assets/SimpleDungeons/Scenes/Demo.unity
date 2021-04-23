@@ -6878,26 +6878,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 824b6f25573464a1f9fbc2ebe0229e83, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Params:
-    maxConvexHulls: 3
-    resolution: 100000
-    concavity: 0.0025
-    planeDownsampling: 4
-    convexhullApproximation: 4
-    alpha: 0.05
-    beta: 0.05
-    pca: 0
-    mode: 0
-    maxNumVerticesPerCH: 16
-    minVolumePerCH: 0.0001
-  m_colliders:
-  - {fileID: 179215560}
-  - {fileID: 179215559}
-  - {fileID: 179215558}
-  m_isTrigger: 0
-  m_material: {fileID: 0}
-  m_showColliders: 1
-  m_colliderAsset: {fileID: 11400000, guid: d3358c0b1fc963e4d86b3ef6b1ef0ee9, type: 2}
 --- !u!1001 &179295406
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -24373,26 +24353,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 824b6f25573464a1f9fbc2ebe0229e83, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Params:
-    maxConvexHulls: 3
-    resolution: 100000
-    concavity: 0.0025
-    planeDownsampling: 4
-    convexhullApproximation: 4
-    alpha: 0.05
-    beta: 0.05
-    pca: 0
-    mode: 0
-    maxNumVerticesPerCH: 16
-    minVolumePerCH: 0.0001
-  m_colliders:
-  - {fileID: 709097888}
-  - {fileID: 709097887}
-  - {fileID: 709097886}
-  m_isTrigger: 0
-  m_material: {fileID: 0}
-  m_showColliders: 1
-  m_colliderAsset: {fileID: 11400000, guid: d3358c0b1fc963e4d86b3ef6b1ef0ee9, type: 2}
 --- !u!1001 &709271914
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -32632,26 +32592,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 824b6f25573464a1f9fbc2ebe0229e83, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Params:
-    maxConvexHulls: 3
-    resolution: 100000
-    concavity: 0.0025
-    planeDownsampling: 4
-    convexhullApproximation: 4
-    alpha: 0.05
-    beta: 0.05
-    pca: 0
-    mode: 0
-    maxNumVerticesPerCH: 16
-    minVolumePerCH: 0.0001
-  m_colliders:
-  - {fileID: 927359773}
-  - {fileID: 927359772}
-  - {fileID: 927359771}
-  m_isTrigger: 0
-  m_material: {fileID: 0}
-  m_showColliders: 1
-  m_colliderAsset: {fileID: 11400000, guid: d3358c0b1fc963e4d86b3ef6b1ef0ee9, type: 2}
 --- !u!1001 &929471678
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -51820,26 +51760,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 824b6f25573464a1f9fbc2ebe0229e83, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Params:
-    maxConvexHulls: 3
-    resolution: 100000
-    concavity: 0.0025
-    planeDownsampling: 4
-    convexhullApproximation: 4
-    alpha: 0.05
-    beta: 0.05
-    pca: 0
-    mode: 0
-    maxNumVerticesPerCH: 16
-    minVolumePerCH: 0.0001
-  m_colliders:
-  - {fileID: 1498186538}
-  - {fileID: 1498186537}
-  - {fileID: 1498186536}
-  m_isTrigger: 0
-  m_material: {fileID: 0}
-  m_showColliders: 1
-  m_colliderAsset: {fileID: 11400000, guid: d3358c0b1fc963e4d86b3ef6b1ef0ee9, type: 2}
 --- !u!1001 &1499453273
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -57067,7 +56987,7 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 1, g: 0.49472612, b: 0.2205882, a: 1}
-  m_Intensity: 5.19
+  m_Intensity: 5
   m_Range: 20
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -60713,26 +60633,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 824b6f25573464a1f9fbc2ebe0229e83, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Params:
-    maxConvexHulls: 3
-    resolution: 100000
-    concavity: 0.0025
-    planeDownsampling: 4
-    convexhullApproximation: 4
-    alpha: 0.05
-    beta: 0.05
-    pca: 0
-    mode: 0
-    maxNumVerticesPerCH: 16
-    minVolumePerCH: 0.0001
-  m_colliders:
-  - {fileID: 1770353593}
-  - {fileID: 1770353592}
-  - {fileID: 1770353591}
-  m_isTrigger: 0
-  m_material: {fileID: 0}
-  m_showColliders: 1
-  m_colliderAsset: {fileID: 11400000, guid: d3358c0b1fc963e4d86b3ef6b1ef0ee9, type: 2}
 --- !u!1001 &1770639856
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -61715,26 +61615,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 824b6f25573464a1f9fbc2ebe0229e83, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Params:
-    maxConvexHulls: 3
-    resolution: 100000
-    concavity: 0.0025
-    planeDownsampling: 4
-    convexhullApproximation: 4
-    alpha: 0.05
-    beta: 0.05
-    pca: 0
-    mode: 0
-    maxNumVerticesPerCH: 16
-    minVolumePerCH: 0.0001
-  m_colliders:
-  - {fileID: 1799025991}
-  - {fileID: 1799025990}
-  - {fileID: 1799025989}
-  m_isTrigger: 0
-  m_material: {fileID: 0}
-  m_showColliders: 1
-  m_colliderAsset: {fileID: 11400000, guid: d3358c0b1fc963e4d86b3ef6b1ef0ee9, type: 2}
 --- !u!1001 &1801909732
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -67601,26 +67481,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 824b6f25573464a1f9fbc2ebe0229e83, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Params:
-    maxConvexHulls: 3
-    resolution: 100000
-    concavity: 0.0025
-    planeDownsampling: 4
-    convexhullApproximation: 4
-    alpha: 0.05
-    beta: 0.05
-    pca: 0
-    mode: 0
-    maxNumVerticesPerCH: 16
-    minVolumePerCH: 0.0001
-  m_colliders:
-  - {fileID: 1964818076}
-  - {fileID: 1964818075}
-  - {fileID: 1964818074}
-  m_isTrigger: 0
-  m_material: {fileID: 0}
-  m_showColliders: 1
-  m_colliderAsset: {fileID: 11400000, guid: d3358c0b1fc963e4d86b3ef6b1ef0ee9, type: 2}
 --- !u!1001 &1965325844
 PrefabInstance:
   m_ObjectHideFlags: 0
