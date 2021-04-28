@@ -53,7 +53,7 @@
                 // for pixels that were kept, read the texture and output it
                 float3 worldNormal = i.worldNormal * 0.5 + 0.5;
                 float2 uv = screenPos.xy / _ScreenParams.xy;
-                fixed4 c = tex2D(_MainTex, uv + worldNormal.g * 0.02);
+                fixed4 c = tex2D(_MainTex, uv * 2.0 + worldNormal.g * 0.02);
                 
                 return c;
             }
