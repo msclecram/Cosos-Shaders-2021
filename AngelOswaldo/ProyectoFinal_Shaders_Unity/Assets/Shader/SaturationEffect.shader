@@ -61,10 +61,6 @@
                 float RGB = (col.r + col.g + col.b) / 3;
                 fixed4 newCol = fixed4(RGB, RGB, RGB, 1);
 
-                float lum = dot(newCol, float3(0.3, 0.59, 0.11));
-                int gb = lum * 3;
-
-
                 if (RGB <= 0.5)
                 {
                     return lerp(col, _Color, RGB);
