@@ -92,7 +92,7 @@
                 float3 worldNormal = i.worldNormal ;
                 float2 uv = i.screenPos.xy/i.screenPos.w;
 
-                fixed4 c = tex2D(_MainTex, uv *1.5 + worldNormal.rg *0.02)  + finalFresnel ;
+                fixed4 c = tex2D(_MainTex, uv  + worldNormal.rg *0.02)  + finalFresnel ;
                 
                 return c;
             }
