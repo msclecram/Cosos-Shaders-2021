@@ -68,8 +68,8 @@
             fixed4 frag(v2f i) : SV_Target
             {
                 float3 viewDir = normalize(_WorldSpaceCameraPos - i.worldPos.xyz);
-                float fresnel = dot(i.worldNormal,viewDir);
 
+                float fresnel = dot(i.worldNormal,viewDir);
                 fresnel = saturate(1 - fresnel);
                 fresnel = pow(fresnel, _FresnelExponent);
                 //fresnel = clamp(fresnel, 0.2, 1.0);
