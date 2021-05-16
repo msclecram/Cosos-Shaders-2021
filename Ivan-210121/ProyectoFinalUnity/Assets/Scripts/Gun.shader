@@ -13,6 +13,8 @@
           intesity("Fresnel Intesity",Range(0.25,10.0)) = 1
           intesity2("Fresnel Intesity2",Range(0.25,10.0)) = 1
           intesity3("Fresnel Intesity3",Range(0.25,10.0)) = 1
+
+          _Distortion("Distortion Value",Range(0.0,2.0)) = 0.02
     }
         SubShader
     {
@@ -65,6 +67,8 @@
             float intesity2;
             float intesity3;
 
+            float _Distortion;
+
             fixed4 frag(v2f i) : SV_Target
             {
                 float3 viewDir = normalize(_WorldSpaceCameraPos - i.worldPos.xyz);
@@ -94,7 +98,7 @@
                 float2 uv = i.screenPos.xy/i.screenPos.w;
 
                 
-                fixed4 c = tex2D(_MainTex, uv  + worldNormal.rg *0.02)  + finalFresnel ;
+                fixed4 c = tex2D(_MainTex, uv  + worldNormal.rg * _Distortion)  + finalFresnel ;
                 
                 return c;
             }
