@@ -71,7 +71,6 @@
                     float punto = 1.0 - dot(camDir, i.normal);
                     punto = pow(clamp(punto, 0.0, 1.0), 2.0);
                     // sample the texture
-                    fixed4 tex = tex2D(_MainTex, i.uv);
                     fixed4 hex = tex2D(_MainTex2, i.uv*5.0);
                     //fixed4 col = float4(i.normal*0.5+0.5, 1.0);
                     //fixed4 col = float4(i.worldPosition, 1.0);
