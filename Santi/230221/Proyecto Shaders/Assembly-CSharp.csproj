@@ -71,6 +71,7 @@
     <None Include="Assets\23-02-21\Shaders\UnlitShader2.shader" />
     <None Include="Assets\23-02-21\Shaders\UnlitShader1.shader" />
     <None Include="Assets\25-02-21\Shaders\UnlitShader2502.shader" />
+    <None Include="Assets\18-03-21\Tarea9\Proyecto.txt" />
     <None Include="Assets\04-03-21\UnlitShader0403.shader" />
     <None Include="Assets\04-03-21\Standard0403.shader" />
     <Reference Include="UnityEngine">

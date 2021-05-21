@@ -1,2 +1,5 @@
 Base path: 'C:/Program Files/Unity/Hub/Editor/2019.4.18f1/Editor/Data', plugins path 'C:/Program Files/Unity/Hub/Editor/2019.4.18f1/Editor/Data/PlaybackEngines'
 Cmd: initializeCompiler
+Cmd: preprocess
+  error: 1 plat 21 at (24): Unrecognized #pragma directive: multi_com3.1415le_fog
+  insize=3398 outsize=591 ok=1
