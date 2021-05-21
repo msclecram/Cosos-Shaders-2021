@@ -64,12 +64,15 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\11-03-21\ScreenEffect.cs" />
     <Compile Include="Assets\AllSkyFree\AllSkyFree_Menu.cs" />
+    <None Include="Assets\11-03-21\Noise.shader" />
     <None Include="Assets\25-02-21\Shaders\UnlitShader25022.shader" />
     <None Include="Assets\04-03-21\UnlitShader04032.shader" />
     <None Include="Assets\AllSkyFree\AllSkyFree_Readme.txt" />
     <None Include="Assets\23-02-21\Shaders\UnlitShader2.shader" />
     <None Include="Assets\23-02-21\Shaders\UnlitShader1.shader" />
+    <None Include="Assets\11-03-21\Vignette.shader" />
     <None Include="Assets\25-02-21\Shaders\UnlitShader2502.shader" />
     <None Include="Assets\18-03-21\Tarea9\Proyecto.txt" />
     <None Include="Assets\04-03-21\UnlitShader0403.shader" />
