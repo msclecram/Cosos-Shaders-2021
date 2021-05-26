@@ -4,9 +4,12 @@
     {
         _Color ("Color", Color) = (1,1,1,1)
         _MainTex ("Albedo (RGB)", 2D) = "white" {}
+        _Skybox("Skymap", CUBE) = "" {}
         normalTex("Normal (RGB)", 2D) = "white" {}
+        _BloomTex("Bloom (RGB)", 2D) = "white" {}
         _Glossiness ("Smoothness", Range(0,1)) = 0.5
         _Metallic ("Metallic", Range(0,1)) = 0.0
+            _edgeIntensity("Edge Intensity", Range(0,1)) = 1.0
     }
     SubShader
     {
@@ -22,16 +25,23 @@
 
         sampler2D _MainTex;
         sampler2D normalTex;
+        sampler2D _BloomTex;
+        samplerCUBE _Skybox;
 
         struct Input
         {
             float2 uv_MainTex;
+            float2 uv_NormalMapTex;
+            float3 worldPos;
+            float3 worldNormal; INTERNAL_DATA
+                float3 viewDir;
         };
 
         half _Glossiness;
         half _Metallic;
         fixed4 _Color;
-
+        half _edgeIntensity = 1.0;
+        half _rainIntensity = 1.0;
         // Add instancing support for this shader. You need to check 'Enable Instancing' on materials that use the shader.
         // See https://docs.unity3d.com/Manual/GPUInstancing.html for more information about instancing.
         // #pragma instancing_options assumeuniformscaling
@@ -45,16 +55,25 @@
             fixed4 c = tex2D (_MainTex, IN.uv_MainTex) * _Color;
             o.Albedo = c.rgb;
             float gray = (c.r + c.g + c.b) / 3.0;
-            // Metallic and smoothness come from slider variables
-            o.Metallic = _Metallic;
-            o.Smoothness = gray;
-            o.Normal = UnpackNormal(tex2D(normalTex, IN.uv_MainTex));
-            o.Alpha = c.a;
 
-            float edge = pow(1.0 - clamp(dot(float3(0.0, 0.0, 1.0), o.Normal), 0.0, 1.0), 1.0);
+            // Metallic and smoothness come from slider variables
+            o.Metallic = _Metallic * _rainIntensity;
+            o.Smoothness = gray * _rainIntensity;
+            
+            o.Alpha = c.a;
+            float3 camDir = normalize(_WorldSpaceCameraPos - IN.worldPos);
+            float3 worldNormal = WorldNormalVector(IN, float3(0.0, 0.0, 1.0));
+            float edge = pow(1.0 - clamp(dot(worldNormal, camDir), 0.0, 1.0), 3.0);
+
+            float3 worldReflection = reflect(worldNormal, camDir);
+            float4 colorReflect = texCUBE(_Skybox, worldReflection);
 
             //o.Emission = float4(o.Normal, 1.0);
-            o.Emission = edge*float4(1.0, 0.0, 0.0, 1.0);
+            o.Normal = UnpackNormal(tex2D(normalTex, IN.uv_NormalMapTex));
+
+            fixed4 bloom = tex2D(_BloomTex, IN.uv_MainTex);
+
+            o.Emission = colorReflect*3.0*gray*_rainIntensity + bloom * c * 15.0;
         }
         ENDCG
     }
