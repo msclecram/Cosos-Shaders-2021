@@ -59,6 +59,7 @@ Material:
     - _BumpScale: 1
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
+    - _Distortion: 0.025
     - _DstBlend: 0
     - _FresnelExponent: 9.37
     - _FresnelExponent2: 3.47
